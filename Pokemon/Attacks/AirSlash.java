@@ -12,4 +12,9 @@ public class AirSlash extends SpecialMove{
         Effect e = new Effect().chance(0.3);
         if(e.success()) e.flinch(p);
     }
+
+    @Override
+    protected String describe() {
+        return "атакует клинком воздуха, который разрезает даже небо. Может заставить врага дрогнуть";
+    }
 }

@@ -12,4 +12,9 @@ public class DarkPulse extends SpecialMove{
         Effect e = new Effect().chance(0.2);
         if(e.success()) e.flinch(p);
     }
+
+    @Override
+    protected String describe() {
+        return "использует ауру ужаса, пронизанную тёмными мыслями. Может заставить врага дрогнуть";
+    }
 }

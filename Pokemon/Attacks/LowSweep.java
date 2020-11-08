@@ -11,4 +11,9 @@ public class LowSweep extends PhysicalMove{
     protected void applyOppEffects(Pokemon p){
         p.setMod(Stat.SPEED, -1);
     }
+
+    @Override
+    protected String describe() {
+        return "быстро атакует ноги врага, уменьшая его скорость";
+    }
 }

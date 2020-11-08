@@ -11,4 +11,9 @@ public class PoisonPowder extends StatusMove{
     protected void applyOppEffects(Pokemon p){
         Effect.poison(p);
     }
+
+    @Override
+    protected String describe() {
+        return "использует ядовитое облако пыли, которое может отравить врага";
+    }
 }

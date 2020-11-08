@@ -11,4 +11,9 @@ public class ChargeBeam extends SpecialMove{
     protected void applySelfEffects(Pokemon p){
         if(Math.random() <= 0.7) p.setMod(Stat.SPECIAL_ATTACK, 1);
     }
+
+    @Override
+    protected String describe() {
+        return "кидает заряженный пучок электричества. Может увеличить свою спец. атаку на 1";
+    }
 }

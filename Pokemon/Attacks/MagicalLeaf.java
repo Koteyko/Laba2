@@ -11,4 +11,9 @@ public class MagicalLeaf extends SpecialMove {
     protected boolean checkAccuracy(Pokemon pokemon, Pokemon pokemon1) {
         return true;
     }
+
+    @Override
+    protected String describe() {
+        return "атакует странным листом, от которого нельзя уклониться";
+    }
 }

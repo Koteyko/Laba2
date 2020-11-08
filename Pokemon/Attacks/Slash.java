@@ -11,4 +11,9 @@ public class Slash extends PhysicalMove{
     protected double calcCriticalHit(Pokemon att, Pokemon def){
         return (Math.random() <= 0.125 ? 2 : 1);
     }
+
+    @Override
+    protected String describe() {
+        return "атакует режущими когтями, имеет повышенный крит. шанс";
+    }
 }

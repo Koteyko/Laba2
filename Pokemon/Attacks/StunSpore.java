@@ -11,4 +11,9 @@ public class StunSpore extends StatusMove{
     protected void applyOppEffects(Pokemon p){
         Effect.paralyze(p);
     }
+
+    @Override
+    protected String describe() {
+        return "распыляет парализующую пыльцу, которая может отравить врага";
+    }
 }
